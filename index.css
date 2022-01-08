@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    margin:auto;
+    width:fit-content;
+    
+    
+   
+}
+header{
+    width: 60vw;
+}
+
+@media(max-width:700px)
+{
+    body{
+        background-color: blueviolet;
+    }
+   
+    
+
+}
+
+.to-do{
+    
+    background-color: rgb(232, 217, 243);
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    
+
+}
+
+header{
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: rgb(203, 190, 212);
+    /* width: 70vw; */
+}
+header h1{
+    
+    text-align: center;
+    font-weight: 500;
+    font-size:2.4rem;
+
+
+}
+
+#todo-form{
+    display: flex;
+    width: 100%;
+}
+input,button{
+    border: none;
+    outline: none;
+    appearance: none;
+    padding: 10px;
+
+}
+
+#todo-input{
+   font-size: 1.3rem;
+   border-radius: 4px;
+   text-align: center;
+   width:100%;
+   margin: 10px ;
+   padding: 14px;
+   color: indigo;
+   /* background-color: rgb(203, 190, 212); */
+
+}
+#todo-input::placeholder{
+    color: white;
+   
+}
+
+#todo-submit{
+   font-size:1rem;
+   height:9vh;
+   width: 13vw;
+   padding: 4px 15px;
+   color: white;
+   background-color: indigo;
+   border-radius: 4px;
+   justify-content: center;
+   font-family: Arial, Helvetica, sans-serif;
+    
+}
+@media(max-width:700px)
+{ header{
+    background-color: #fff;
+}
+body{
+    background-color: white;
+}
+    #todo-submit{
+        font-size:0.8rem;
+        /* height:9vh; */
+        /* width: 13vw; */
+        padding: 4px 6px;
+        color: white;
+        background-color: indigo;
+        border-radius: 4px;
+        /* justify-content: center; */
+        font-family: Arial, Helvetica, sans-serif;
+         
+     }
+     #todo-input{
+         
+         background-color: rgb(213, 182, 241);
+     }
+    header{
+    
+        width:max-content;
+        /* background-color: rgb(203, 190, 212); */
+    }
+    #todo-input{
+        width: fit-content;
+        font-size: 1rem;
+        
+    }
+    #todo-submit{
+        font-size: 1rem;
+        padding: 2px 6px;
+        width: fit-content;
+    }
+    .to-do{
+        width: 80vw;
+        background-color: white;
+    }
+    .task-list{
+        width:max-content;
+        background-color: rgb(220, 201, 235);
+        margin: auto auto;
+        
+    }
+    
+}
+
+#todo-submit:hover{
+    cursor: pointer;
+    
+}
+.to-do{
+    box-shadow: 0 0 30px 0px rgba(19, 19, 19, 0.7);
+    height: max-content;
+
+}
+
+main{
+    /* max-width: 800px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin:20px auto ;
+    margin-bottom: 50px;
+   
+    
+
+}
+
+
+
+@media(max-width:700px)
+{ header{
+    width:max-content;
+    width: 100vw;
+    margin: auto;
+    justify-content: center;
+
+}
+    main{
+        width:100vw;
+        
+        
+    }
+
+    .to-do{
+        width:100vw;
+        height:max-content;
+        box-shadow: 0 0 ;
+    }
+    
+}
+.task{
+    margin: 10px;
+}
+
+
+.task-list h2{
+    padding: 20px;
+    font-size:2rem;
+    font-weight: 550;
+    color:indigo;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+
+
+
+}
+
+#tasks .task .content {
+    flex:1 1 0%;
+    
+}
+
+
+#tasks .task .content .text{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size:20px;
+    font-weight: 547;
+    color: indigo;
+    
+
+}
+
+#tasks .task .actions{
+    display: flex;
+    flex:0 -0.5rem ;
+    margin-top: 20px;
+
+}
+@media(max-width:700px)
+{
+    .to-do{
+        margin: 10vh auto;
+    }
+    #tasks{
+        
+        flex:0 0;
+        width:max-content;
+        
+    }
+    #task{
+        flex-direction: row;
+        
+    
+    }
+    .actions{
+        flex-direction: row;
+        width: 20vw;
+        width: fit-content;
+    }
+    .task{
+        width: fit-content;
+        
+    }
+    .text{
+        height: 8vh;
+        width: 80vw;
+    }
+    .edit .delete .check{
+    
+        font-size:14px;
+        font-weight:700;
+        width:20px;
+        background-color: rgb(154, 154, 223);
+        color:blue;
+        padding: 10px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+   
+}
+
+
+
+
+.edit{
+    
+    background-color:rgb(37, 37, 126);
+    color:white;
+    font-size:14px;
+    font-weight:500;
+    width: 80px;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.delete{
+    background-color: rgb(150, 25, 25);;
+    color:white;
+    font-size:14px;
+    font-weight:500;
+    width: 80px;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+   
+}
+.check{
+    background-color: rgb(24, 105, 24);
+    color:white;
+    font-size:14px;
+    font-weight:500;
+    width: 80px;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.check:hover{
+    background-color: rgb(27, 88, 27);
+    color: gainsboro;
+    font-size: 16px;
+    
+}
+.edit:hover{
+    background-color: rgb(31, 31, 114);
+    color: gainsboro;
+    font-size: 16px;
+}
+.delete:hover{
+    background-color: rgb(126, 23, 23);
+    color: gainsboro;
+    font-size: 16px;
+}
